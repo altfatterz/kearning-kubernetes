@@ -1,11 +1,11 @@
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
-  name: my-network-policy
+  name: simple-network-policy
 spec:
   podSelector:
     matchLabels:
-      app: secure-app
+      app: secure-pod
   policyTypes:
   - Ingress
   ingress:
