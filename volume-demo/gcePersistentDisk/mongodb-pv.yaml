@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: pv-1
+  name: mongodb-pv
 spec:
   accessModes:
     - ReadWriteOnce
   capacity:
-    storage: 10Gi
-  storageClassName: ssd
+    storage: 1Gi
+  storageClassName: ssd-disk
   gcePersistentDisk:
-    pdName: disk-1
+    pdName: mongodb

@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: pvc-1
+  name: mongodb-pvc
 spec:
   accessModes:
     - ReadWriteOnce
-  storageClassName: ssd
+  storageClassName: ssd-disk
   resources:
     requests:
-      storage: 10Gi
+      storage: 500Mi
