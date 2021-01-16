@@ -5,13 +5,13 @@ metadata:
 spec:
   containers:
     - name: busybox1
-      image: busybox:latest
+      image: busybox
       command: [ "/bin/sh", "-c", "while true; do sleep 3600; done" ]
       volumeMounts:
         - mountPath: /data
           name: data
     - name: busybox2
-      image: busybox:latest
+      image: busybox
       command: [ "/bin/sh", "-c", "while true; do sleep 3600; done" ]
       volumeMounts:
         - mountPath: /data

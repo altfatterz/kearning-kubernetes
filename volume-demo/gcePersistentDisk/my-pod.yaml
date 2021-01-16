@@ -9,7 +9,7 @@ spec:
         claimName: pvc-1
   containers:
     - name: busybox
-      image: radial/busyboxplus:curl
+      image: busybox
       command: ["/bin/sh", "-c", "while true; do sleep 3600; done"]
       volumeMounts:
         - mountPath: /data
